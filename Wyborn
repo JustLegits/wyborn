@@ -149,7 +149,7 @@ end
 
 task.spawn(
     function()
-        local discord = loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/refs/heads/main/main%202"))()
+        local discord = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLegits/wyborn/main/main2"))()
         local win =
             discord:Window("Wyborn " .. getgenv().wyvern_version .. " - KW's edition [DylanElHacker = Femboy]")
         local serv = win:Server("Wyborn", "http://www.roblox.com/asset/?id=6031075938")
@@ -160,7 +160,7 @@ task.spawn(
             changelog:Button(
                 "NEW Dev Product Purchase",
                 function()
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/refs/heads/main/Dev%20Product%20Purchase"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLegits/wyborn/main/DevProductPurchase"))()
                         discord:Notification("Wyborn Product Purchase", "Successfully executed !", "Okay!")
                 end
             )
@@ -383,7 +383,7 @@ task.spawn(
                     getgenv().BuyPaidItems = bool
                 end
             )
-            local inputlink = loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/refs/heads/main/main%204",true))()
+            local inputlink = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLegits/wyborn/main/main4",true))()
 
             ugc:Toggle(
                 "Auto Purchaser",
@@ -2205,12 +2205,12 @@ task.spawn(
         end
         task.spawn(
             function()
-                getgenv().realwyvernversion = loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/refs/heads/main/version"))()
+                getgenv().realwyvernversion = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLegits/wyborn/main/version"))()
                 
                 if getgenv().wyvern_version == nil or getgenv().wyvern_version ~= getgenv().realwyvernversion then
                     if getgenv().SentPromptCorePackage == false then
                         getgenv().SentPromptCorePackage = true
-                        local PromptLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/refs/heads/main/main%203"))()
+                        local PromptLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLegits/wyborn/main/main3"))()
                         PromptLib(
                             "Heads Up!",
                             "This Wyvern is not up to date! Please tell the uploader of the script to update it to the newest version. This is to enhance your experience with the latest updates.",
@@ -2222,11 +2222,11 @@ task.spawn(
                                     Callback = function()
                                         pcall(
                                             function()
-                                                loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/refs/heads/main/wyborn"))(
+                                                loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLegits/wyborn/main/Wyborn"))(
 
                                                 )
                                                 game:GetService("GuiService"):ClearError()
-                                                setclipboard("https://raw.githubusercontent.com/ckw69/Wyborn/refs/heads/main/wyborn")
+                                                setclipboard("https://raw.githubusercontent.com/JustLegits/wyborn/main/Wyborn")
                                             end
                                         )
                                     end
